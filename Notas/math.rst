@@ -31,9 +31,9 @@ Métodos de Math
 | ``sin()``    | Funciones trigonométricas estándar; con el argumento en radianes.         |
 +--------------+                                                                           |
 | ``cos()``    |                                                                           |
-+--------------+---------------------------------------------------------------------------+
-| ``tan()``	   | Funciones trigonométricas estándar; con el argumento en radianes.         |
 +--------------+                                                                           |
+| ``tan()``    |                                                                           |
++--------------+---------------------------------------------------------------------------+
 | ``asin()``   |                                                                           |
 +--------------+                                                                           |
 | ``acos()``   |                                                                           |
