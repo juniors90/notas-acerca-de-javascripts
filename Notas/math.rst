@@ -56,7 +56,7 @@ Métodos de Math
 +--------------+---------------------------------------------------------------------------+
 | ``pow()``    | Funciones exponenciales y logarítmicas.                                   |
 +--------------+                                                                           |
-| ``exp() ``   |                                                                           |
+| ``exp()``    |                                                                           |
 +--------------+                                                                           |
 | ``expm1()``  |                                                                           |
 +--------------+                                                                           |
@@ -72,7 +72,7 @@ Métodos de Math
 +--------------+---------------------------------------------------------------------------+
 | ``min()``    | Devuelven el valor mínimo de una lista de números como argumentos.        |
 +--------------+---------------------------------------------------------------------------+
-| ``max() ``   | Devuelven el valor máximo de una lista de números como argumentos.        |
+| ``max()``    | Devuelven el valor máximo de una lista de números como argumentos.        |
 +--------------+---------------------------------------------------------------------------+
 | ``random()`` | Devuelve un número aleatorio entre 0 y 1.                                 |
 +--------------+---------------------------------------------------------------------------+
