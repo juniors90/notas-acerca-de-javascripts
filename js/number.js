@@ -194,6 +194,32 @@ Determine si el valor pasado es un entero seguro (número entre :math:`-(2^{53} 
     console.log("Number.isSafeInteger(num3) es", Number.isSafeInteger(num3))
 /*
 
+Number.parseFloat()
+~~~~~~~~~~~~~~~~~~~~
+
+El valor es el mismo que ``parseFloat()`` del objeto global.
+
+.. code-block:: javascripts
+*/
+    console.log("Number.parseFloat(num1) es", Number.parseFloat(num1))
+    console.log("Number.parseFloat(num2) es", Number.parseFloat(num2))
+    console.log("Number.parseFloat(num3) es", Number.parseFloat(num3))
+/*
+
+Number.parseInt()
+~~~~~~~~~~~~~~~~~~
+
+El valor es el mismo que ``parseInt()`` del objeto global.
+
+.. code-block:: javascripts
+*/
+    console.log("Number.parseInt(num1) es", Number.parseInt(num1))
+    console.log("Number.parseInt(num2) es", Number.parseInt(num2))
+    console.log("Number.parseInt(num3) es", Number.parseInt(num3))
+/*
+
+
+
 Instancias Number
 -------------------------------
 
@@ -275,3 +301,20 @@ El siguiente ejemplo crea un objeto ``Number``, miNro, luego añade la propiedad
     Number.prototype.description = null;
     miNro.description = "velocidad del viento";
     console.log("La descripción de miNro es", miNro.description)
+
+/*
+Utilizando el objecto Number para transformar un objeto Date
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+El siguiente ejemplo convierte el objeto Date a un valor numérico usando Number  como función:
+
+.. code-block:: javascripts
+*/    
+    var d = new Date('December 17, 1995 03:24:00');
+    console.log(Number(d));
+    let nd = new Number('819199440000')
+    console.log(nd);
+
+/*
+Esto muestra "``819199440000``".
+*/

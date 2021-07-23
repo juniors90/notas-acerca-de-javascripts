@@ -91,7 +91,7 @@ El número más pequeño representable - que es el número positivo más cercano
 
 .. code-block:: javascripts
 
-    const numMasChico    = Number.MIN_VALUE;
+    const numMasChico = Number.MIN_VALUE;
     console.log("El mínimo valor es", numMasChico);
 
 
@@ -193,6 +193,30 @@ Determine si el valor pasado es un entero seguro (número entre :math:`-(2^{53} 
     console.log("Number.isSafeInteger(num2) es", Number.isSafeInteger(num2))
     console.log("Number.isSafeInteger(num3) es", Number.isSafeInteger(num3))
 
+Number.parseFloat()
+~~~~~~~~~~~~~~~~~~~~
+
+El valor es el mismo que ``parseFloat()`` del objeto global.
+
+.. code-block:: javascripts
+
+    console.log("Number.parseFloat(num1) es", Number.parseFloat(num1))
+    console.log("Number.parseFloat(num2) es", Number.parseFloat(num2))
+    console.log("Number.parseFloat(num3) es", Number.parseFloat(num3))
+
+
+Number.parseInt()
+~~~~~~~~~~~~~~~~~~
+
+El valor es el mismo que ``parseInt()`` del objeto global.
+
+.. code-block:: javascripts
+
+    console.log("Number.parseInt(num1) es", Number.parseInt(num1))
+    console.log("Number.parseInt(num2) es", Number.parseInt(num2))
+    console.log("Number.parseInt(num3) es", Number.parseInt(num3))
+
+
 
 Instancias Number
 -------------------------------
@@ -275,3 +299,49 @@ El siguiente ejemplo crea un objeto ``Number``, miNro, luego añade la propiedad
     miNro = new Number(65);
     Number.prototype.description = null;
     miNro.description = "velocidad del viento";
+
+Utilizando el objecto Number para transformar un objeto Date
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+El siguiente ejemplo convierte el objeto Date a un valor numérico usando Number  como función:
+
+.. code-block:: javascripts
+    
+    var d = new Date('December 17, 1995 03:24:00');
+    console.log(Number(d));
+
+Esto muestra "``819199440000``".
+
+El objeto Math
+El objeto integrado Math tiene propiedades y métodos para constantes y funciones matemáticas. Por ejemplo, la propiedad PI del objeto Math tiene el valor de pi (3.141...), que usarías en una aplicación como:
+
+Math.PI
+Copy to Clipboard
+De manera similar, las funciones matemáticas estándar son métodos de Math. Estas incluyen funciones trigonométricas, logarítmicas, exponenciales y otras. Por ejemplo, si deseas utilizar la función trigonométrica «seno», debes escribir
+
+Math.sin(1.56)
+Copy to Clipboard
+Ten en cuenta que todos los métodos trigonométricos de Math toman argumentos en radianes.
+
+La siguiente tabla resume los métodos del objeto Math.
+
+Métodos de Math
+Método	Descripción
+abs()	Valor absoluto
+sin(), cos(), tan()	Funciones trigonométricas estándar; con el argumento en radianes.
+asin(), acos(), atan(), atan2()	Funciones trigonométricas inversas; devuelven valores en radianes.
+sinh() (en-US), cosh() (en-US), tanh()	Funciones hiperbólicas; argumento en ángulo hiperbólico.
+asinh(), acosh(), atanh()	Funciones hiperbólicas inversas; devuelven valores en ángulo hiperbólico.
+pow(), exp(), expm1(), log10(), log1p() (en-US), log2()
+
+Funciones exponenciales y logarítmicas.
+floor(), ceil()	Devuelve el entero más grande/más pequeño menor/mayor o igual que un argumento.
+min(), max()	Devuelven el valor mínimo o máximo (respectivamente) de una lista de números separados por comas como argumentos.
+random()	Devuelve un número aleatorio entre 0 y 1.
+round(), fround() (en-US), trunc(),	Funciones de redondeo y truncamiento.
+sqrt(), cbrt(), hypot()	Raíz cuadrada, raíz cúbica, raíz cuadrada de la suma de argumentos cuadrados.
+sign()	El signo de un número, que indica si el número es positivo, negativo o cero.
+clz32() (en-US),
+imul() (en-US)	Número de bits cero iniciales en la representación binaria de 32 bits.
+El resultado de la multiplicación de 32 bits similar a C de los dos argumentos.
+A diferencia de muchos otros objetos, nunca creas un objeto Math propio. Siempre usas el objeto Math incorporado.
