@@ -1,7 +1,7 @@
 El objeto Math
 ===========================
 
-El objeto integrado ``Math`` tiene propiedades y métodos para constantes y funciones matemáticas. Por ejemplo, la propiedad PI del objeto ``Math`` tiene el valor de pi (3.141...), que usarías en una aplicación como:
+El objeto integrado ``Math`` tiene propiedades y métodos para constantes y funciones matemáticas. Por ejemplo, la propiedad PI del objeto ``Math`` tiene el valor de :math:`\pi` (:math:`3.141\dots`), que usarías en una aplicación como:
 
 .. code-block:: javascripts
 

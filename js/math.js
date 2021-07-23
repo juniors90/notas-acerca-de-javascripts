@@ -1,100 +1,99 @@
-/* El objeto Math
-===========================
+const piMat = Math.PI
+console.log("el valor de piMat es ", piMat)
 
-El objeto integrado ``Math`` tiene propiedades y métodos para constantes y funciones matemáticas. Por ejemplo, la propiedad PI del objeto ``Math`` tiene el valor de pi (3.141...), que usarías en una aplicación como:
+const k = Math.sin(1.56)
+console.log("el valor de k es ", k)
 
-.. code-block:: javascripts
-*/
-    const piMat = Math.PI
-    console.log("el valor de piMat es ", piMat)
-/*
-De manera similar, las funciones matemáticas estándar son métodos de ``Math``. Estas incluyen funciones trigonométricas, logarítmicas, exponenciales y otras. Por ejemplo, si deseas utilizar la función trigonométrica "seno", debes escribir
+const abs1 = Math.abs(-10)
+const abs2 = Math.abs(0)
+const abs3 = Math.abs(10)
+console.log(abs1, abs2, abs3, abs1 == abs3) // 10, 0, 10, true
 
+const sin1 = Math.sin(-1.54)
+const sin2 = Math.sin(0)
+const sin3 = Math.sin(1.43)
+console.log(sin1, sin2, sin3)
 
-.. code-block:: javascripts
-*/
-    const k = Math.sin(1.56)
-    console.log("el valor de k es ", k)
-/*
-Ten en cuenta que todos los métodos trigonométricos de ``Math`` toman argumentos en radianes.
+const cos1 = Math.cos(-1.54)
+const cos2 = Math.cos(0)
+const cos3 = Math.cos(1.43)
+console.log(cos1, cos2, cos3)
 
-La siguiente tabla resume los métodos del objeto ``Math``.
+const tan1 = Math.tan(-1.54)
+const tan2 = Math.tan(0)
+const tan3 = Math.tan(1.43)
+console.log(tan1, tan2, tan3)
 
-Métodos de Math
-~~~~~~~~~~~~~~~~~~~~~~~~~
-*/
-//+--------+---------------------------------------------------------------------------+
-//| Método   | Descripción                                                             |
-//+==========+=========================================================================+
-abs()    //| Valor absoluto                                                            |
-//+--------+---------------------------------------------------------------------------+
-sin()    //| Funciones trigonométricas estándar; con el argumento en radianes.         |
-//+--------+                                                                           |
-cos()    //|                                                                           |
-//+--------+---------------------------------------------------------------------------+
-tan()	 //| Funciones trigonométricas estándar; con el argumento en radianes.         |
-//+--------+                                                                           |
-asin()   //|                                                                           |
-//+--------+                                                                           |
-acos()   //|                                                                           |
-//+--------+                                                                           |
-atan()	 //|                                                                           |
-//+--------+                                                                           |
-atan2()	 //|                                                                           |
-//+--------+---------------------------------------------------------------------------+
-sinh()   //| Funciones hiperbólicas; argumento en ángulo hiperbólico.                  |
-//+--------+                                                                           |
-cosh()   //|                                                                           |
-//+--------+                                                                           |
-tanh()   //|                                                                           |
-//+--------+---------------------------------------------------------------------------+
-asinh()  //| Funciones hiperbólicas inversas; devuelven valores en ángulo hiperbólico. |
-//+--------+                                                                           |
-acosh()  //|                                                                           |
-//+--------+                                                                           |
-atanh()  //|                                                                           |
-//+--------+---------------------------------------------------------------------------+
-pow()    //| Funciones exponenciales y logarítmicas.                                   |
-//+--------+                                                                           |
-exp()    //|                                                                           |
-//+--------+                                                                           |
-expm1()  //|                                                                           |
-//+--------+                                                                           |
-log10()  //|                                                                           |
-//+--------+                                                                           |
-log1p()  //|                                                                           |
-//+--------+                                                                           |
-log2()   //|                                                                           |
-//+--------+---------------------------------------------------------------------------+
-floor()  //| Devuelve el entero más grande menor o igual que un argumento.             |
-//+--------+---------------------------------------------------------------------------+
-ceil()   //| Devuelve el entero más pequeño mayor o igual que un argumento.            |
-//+--------+---------------------------------------------------------------------------+
-min()    //| Devuelven el valor mínimo de una lista de números como argumentos.        |
-//+--------+---------------------------------------------------------------------------+
-max()    //| Devuelven el valor máximo de una lista de números como argumentos.        |
-//+--------+---------------------------------------------------------------------------+
-random() //| Devuelve un número aleatorio entre 0 y 1.                                 |
-//+--------+---------------------------------------------------------------------------+
-round()  //| Funciones de redondeo y truncamiento.                                     |
-//+--------+                                                                           |
-fround() //|                                                                           |
-//+--------+                                                                           |
-trunc(), //|                                                                           |
-//+--------+---------------------------------------------------------------------------+
-sqrt()   //| Raíz cuadrada de argumentos cuadrados.                                    |
-//+--------+---------------------------------------------------------------------------+
-cbrt()   //| Raíz cúbica de argumentos cúbicos.                                        |
-//+--------+---------------------------------------------------------------------------+
-hypot()  //| Raíz cuadrada de la suma de argumentos cuadrados.                         |
-//+--------+---------------------------------------------------------------------------+
-sign()   //| Deculeve el signo de un número.                                           |
-//+--------+---------------------------------------------------------------------------+
-clz32()  //| Número de bits cero iniciales en la representación                        |
-imul()   //| binaria de :math:`32` bits.                                               |
-//+--------+---------------------------------------------------------------------------+
-/*
-El resultado de la multiplicación de :math:`32` bits similar a ``C`` de los dos argumentos.
+Math.asin()
 
-A diferencia de muchos otros objetos, nunca creas un objeto Math propio. Siempre usas el objeto Math incorporado.
-*/
+Math.acos()
+
+Math.atan()
+
+Math.atan2()
+
+Math.sinh()
+
+Math.cosh()
+
+Math.tanh()
+
+Math.asinh()
+
+Math.acosh()
+
+Math.atanh()
+
+Math.pow()
+
+Math.exp()
+
+Math.expm1()
+
+Math.log10()
+
+Math.log1p()
+
+Math.log2()
+
+Math.floor()
+
+Math.ceil()
+
+const min1 = Math.min(1,2,3,4,-1)
+const min2 = Math.min(-11,22,30,-40,-1)
+const min3 = Math.min(10,20,30,40,-10)
+console.log(min1, min2, min3)
+
+const max1 = Math.max(1,2,3,4,-1)
+const max2 = Math.max(-11,22,30,-40,-1)
+const max3 = Math.max(10,20,30,40,-10)
+console.log(max1, max2, max3)
+
+Math.random()
+
+Math.round()
+
+Math.fround()
+
+Math.trunc()
+
+const qrt1 = Math.sqrt(25)
+const qrt2 = Math.sqrt(0)
+const qrt3 = Math.sqrt(-27)
+console.log(qrt1, qrt2, qrt3)
+
+const cbrt1 = Math.cbrt(64)
+const cbrt2 = Math.cbrt(0)
+const cbrt3 = Math.cbrt(-27)
+console.log(cbrt1, cbrt2, cbrt3)
+
+Math.hypot()
+
+const sign1 = Math.sign(25)
+const sign2 = Math.sign(0)
+const sign3 = Math.sign(-27)
+console.log(sign1, sign2, sign3)
+
+Math.clz32()
+Math.imul()
