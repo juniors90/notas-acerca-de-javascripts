@@ -38,7 +38,7 @@ Constructor
 
 ``Number()`` crea un nuevo valor Numérico (Number value).
 
-.. _metodo:
+
 
 .. _propiedades:
 
@@ -134,6 +134,8 @@ Number.prototype
 
 Permite la adición de propiedades a un objeto Number.
 
+.. _metodos:
+
 Métodos
 -------------
 
@@ -197,8 +199,9 @@ Instancias Number
 
 Todas las instancias Number heredan de ``Number.prototype``. El objeto prototipo del constructor de ``Number`` puede modificarse para aceptar a todas las instancias de Number.
 
-Métodos
-~~~~~~~~~~~~
+
+Distintos Métodos
+~~~~~~~~~~~~~~~~~~~~
 
 - ``Number.prototype.toExponential(fractionDigits)``
 
