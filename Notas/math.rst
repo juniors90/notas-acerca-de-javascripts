@@ -34,7 +34,7 @@ Métodos de Math
 +--------------+                                                                           |
 | ``tan()``    |                                                                           |
 +--------------+---------------------------------------------------------------------------+
-| ``asin()``   |                                                                           |
+| ``asin()``   | Funciones trigonométricas inversas; devuelven valores en radianes.        |
 +--------------+                                                                           |
 | ``acos()``   |                                                                           |
 +--------------+                                                                           |
@@ -74,7 +74,7 @@ Métodos de Math
 +--------------+---------------------------------------------------------------------------+
 | ``max()``    | Devuelven el valor máximo de una lista de números como argumentos.        |
 +--------------+---------------------------------------------------------------------------+
-| ``random()`` | Devuelve un número aleatorio entre 0 y 1.                                 |
+| ``random()`` | Devuelve un número aleatorio entre :math:`0` y :math:`1`.                 |
 +--------------+---------------------------------------------------------------------------+
 | ``round()``  | Funciones de redondeo y truncamiento.                                     |
 +--------------+                                                                           |
@@ -97,4 +97,4 @@ Métodos de Math
 
 El resultado de la multiplicación de :math:`32` bits similar a ``C`` de los dos argumentos.
 
-A diferencia de muchos otros objetos, nunca creas un objeto Math propio. Siempre usas el objeto Math incorporado.
+A diferencia de muchos otros objetos, nunca creas un objeto Math propio. Siempre usas el objeto ``Math`` incorporado.
